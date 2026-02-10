@@ -134,19 +134,22 @@ section .full-card:hover{
     transform: translate(3px);
     box-shadow: 0 0 6px 0px black;
     transform: scale(1.05) ;
+    border-radius: 10px;
 }
 section .card-img{
     overflow: hidden;
+    max-height: 200px;
 }
 section .card-img img{
-    max-height: 200px;
+    max-height: 100%;
     border-radius: 10px 10px 0px 0;
     width: 100%;
     object-fit: cover;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 section .full-card:hover .card-img img{
     transform: scale(1.1) ;
+    border-radius: 10px 10px 0px 0;
 }
 
 section .card{
@@ -181,5 +184,10 @@ section .right-card{
     justify-content: center;
     width: 100%;
 }
-
+section .main-card-bottom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    width: 100%;
+}
 
